@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+	<title>扫雷啦啦啦啦</title>
+	<link rel="stylesheet" type="text/css" href="mine.css">
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="mine.js"></script>
+	<style type="text/css">
+		.left{
+			width: 50%;
+			height: auto;
+			float: left;
+		}
+		.right{
+			width: 45%;
+			height: auto;
+			float: right;
+		}
+		#name{
+			width: 150px;
+		}
+	</style>
+</head>
+<body onload="intFace(8,8,1);">
+<div class="left">
+	<p>
+		<label>当前难度级别：</label><span id="gameLevel"></span><br/>
+		<label>第一名：</label><span id="record1"></span><br/>
+		<label>第二名：</label><span id="record2"></span><br/>
+		<label>第三名：</label><span id="record3"></span>
+	</p>
+	<!-- onafterpaste()防止复制粘贴的为文本 -->
+	<h5><lable for="name">ID:　</lable><input  id="name" maxlength="6" minlength="6" placeholder="输入六位数字类型的ID" type="text" onkeyup="this.value=this.value.replace(/[^\d]/g,'') " onafterpaste="this.value=this.value.replace(/[^\d]/g,'') "></h5>
+	<!-- 记录成绩与用户的table -->
+	<div id="list"></div>
+	<button onclick="clean()">清除localstorage</button>
+	
+</div>
+
+<div class="right">
+	<p>当前雷数：
+		<span id="leiNum" style="color:red;">8</span>个
+	</p>
+	<p>当前用时:
+		<span id="time" style="color:red;">0.0</span>秒
+	</p>
+	<p>您总共耗时：
+	<span id="end_time" style="color:red;"></span>秒
+	</p>
+	请选择难度:
+	<select id="level">
+		<option value="1">初级</option>
+		<option value="2">中级</option>
+		<option value="3">高级</option>
+	</select><br/><br/>
+	<!-- 扫雷table -->
+	<table id="mainInt" cellpadding="0" cellspacing="0">
+	</table>
+</div>
+	
+	
+</body>
+</html>

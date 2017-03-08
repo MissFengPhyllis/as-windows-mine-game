@@ -1,0 +1,77 @@
+.myButton{  
+ width: 30px;  
+ height: 30px;  
+ color:silver;
+ background: silver;  
+ }  
+  .myButton0{  
+ width: 30px;  
+ height: 30px;  
+ color:#ccc;  
+ background:gray;  
+ }  
+ .myButton1{  
+ background: gray;  
+ color:blue;  
+ font-size:10px;  
+ width: 30px;  
+ height: 30px;  
+ }  
+ .myButton2{  
+ background: gray;  
+ font-size:10px;  
+ color:green;  
+ width: 30px;  
+ height: 30px;  
+ }  
+  .myButton3{  
+ background: gray;  
+ color:yellow;  
+ width: 30px;  
+ height: 30px;  
+ }  
+  .myButton4{  
+ background: gray;  
+ color: aqua;  
+ width: 30px;  
+ height: 30px;  
+ }  
+  .myButton5{  
+ background: gray;  
+ color: fuchsia;  
+ width: 30px;  
+ height: 30px;  
+ }  
+  .myButton6{  
+ background: gray;  
+ color:lime;  
+ width: 30px;  
+ height: 30px;  
+ }  
+  .myButton7{  
+ background: gray;  
+ color: teal;  
+ width: 30px;  
+ height: 30px;  
+ }  
+   
+ .myButton8{  
+ background: gray;  
+ color: #fff;  
+ width: 30px;  
+ height: 30px;  
+ }  
+   
+ .myButton_{  
+ background: gray;  
+ color: red;  
+ width: 30px;  
+ height: 30px;  
+ }  
+
+.flagbox{
+	width: 30px;  
+	height: 30px; 
+	color:#b41f20; 
+	background: url(hongqi.jpg) no-repeat;
+}
